@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/MakanRP/static/css/main.be9a786e.css",
-    "main.js": "/MakanRP/static/js/main.89f9a93d.js",
+    "main.css": "/MakanRP/static/css/main.d7abc91b.css",
+    "main.js": "/MakanRP/static/js/main.2657e9dd.js",
     "static/js/453.9d05b1df.chunk.js": "/MakanRP/static/js/453.9d05b1df.chunk.js",
     "static/media/logo.png": "/MakanRP/static/media/logo.004c1b37dfc81a595549.png",
     "static/media/pfp_r.png": "/MakanRP/static/media/pfp_r.19551126c4e3f1f51adf.png",
+    "static/media/north.jpg": "/MakanRP/static/media/north.8286084b1b5edd571c68.jpg",
     "static/media/pfp_j.png": "/MakanRP/static/media/pfp_j.8d98e53258027f714d36.png",
     "static/media/pfp_l.png": "/MakanRP/static/media/pfp_l.d451d8053db28b732f70.png",
     "static/media/pfp_h.png": "/MakanRP/static/media/pfp_h.8a36683fe6abf39e5afc.png",
+    "static/media/south.jpg": "/MakanRP/static/media/south.b1fb6d83e7a439f7fad7.jpg",
     "index.html": "/MakanRP/index.html",
-    "main.be9a786e.css.map": "/MakanRP/static/css/main.be9a786e.css.map",
-    "main.89f9a93d.js.map": "/MakanRP/static/js/main.89f9a93d.js.map",
+    "main.d7abc91b.css.map": "/MakanRP/static/css/main.d7abc91b.css.map",
+    "main.2657e9dd.js.map": "/MakanRP/static/js/main.2657e9dd.js.map",
     "453.9d05b1df.chunk.js.map": "/MakanRP/static/js/453.9d05b1df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be9a786e.css",
-    "static/js/main.89f9a93d.js"
+    "static/css/main.d7abc91b.css",
+    "static/js/main.2657e9dd.js"
   ]
 }
