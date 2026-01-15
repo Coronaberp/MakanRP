@@ -124,7 +124,7 @@ export default function Chat() {
         setTimeout(() => {
           setMessages((prev) => [
             ...prev,
-            { id: Date.now() + 1, from: 'bot', text: 'Thanks — this is a preview response from Snackii.' },
+            { id: Date.now() + 1, from: 'bot', text: 'Sorry, something failed. Please try again!' },
           ]);
         }, 700);
       }
@@ -155,7 +155,7 @@ export default function Chat() {
         setTimeout(() => {
           setMessages((prev) => [
             ...prev,
-            { id: Date.now() + 1, from: 'bot', text: `Preview output for: "${prompt}"` },
+            { id: Date.now() + 1, from: 'bot', text: `Sorry, something failed. Please try again!` },
           ]);
         }, 600);
       }
