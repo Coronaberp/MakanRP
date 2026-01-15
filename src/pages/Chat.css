@@ -25,6 +25,63 @@
 .chat-header h2{ margin: 0; color: #23400f; }
 .chat-sub{ margin: 6px 0 0; color: #556b45; font-size: 13px; }
 
+/* Reset button: transparent by default, highlight on hover */
+.reset-button{
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.reset-button .reset-icon{ color: #23400f; font-weight: 600; }
+.reset-button:hover{ background: #e9f6e7; border-color: rgba(90,159,95,0.12); }
+.reset-button:focus{ outline: none; box-shadow: 0 0 0 3px rgba(124,179,66,0.12); }
+
+/* Confirmation modal */
+.modal-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 60;
+}
+.modal{
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  min-width: 260px;
+  max-width: 90%;
+}
+.modal-actions{
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.confirm-button{
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.confirm-button:hover{ background: #c9403f; }
+.cancel-button{
+  background: #f0f0f0;
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.cancel-button:hover{ background: #e8e8e8; }
+
 .chat-messages{
   flex: 1 1 auto;
   padding: 18px;

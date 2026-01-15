@@ -4,6 +4,10 @@ import { Routes, Route, NavLink } from 'react-router-dom';
 import Docs from './pages/Docs';
 import Chat from './pages/Chat';
 import Contact from './pages/Contact';
+import pfp_j from './pfp_j.png';
+import pfp_r from './pfp_r.png';
+import pfp_l from './pfp_l.png';
+import pfp_h from './pfp_h.png';
 
 function HomeContent() {
     return (
@@ -72,38 +76,50 @@ function HomeContent() {
                     <p className="team-intro">Behind Makan@RP is a diverse student team from Republic Polytechnic's school of Infocomm, with each member taking on a clear role in solution design, communication, media, and quality assurance.</p>
                     <div className="team-values">
                         <div className="profile-card">
-                            <div className="profile-avatar">AT</div>
+                            <div className="profile-avatar">
+                                <img src={pfp_j} alt="JM" className="profile-image" />
+                            </div>
                             <div className="profile-info">
-                                <h4 className="profile-name">Aisha Tan</h4>
-                                <div className="profile-role">UX / Visual Designer</div>
-                                <p className="profile-bio">Design lead focusing on user flows, accessibility, and the visual language of Snackii.</p>
+                                <h4 className="profile-name">Jason</h4>
+                                <div className="profile-role">Solutions Lead</div>
+                                <div className="profile-subrole">Project Captain/Steward</div>
+                                <p className="profile-bio">Orchestrate the vision and strategy, to align stakeholder needs with technical execution and team coordination.</p>
                             </div>
                         </div>
 
                         <div className="profile-card">
-                            <div className="profile-avatar">BL</div>
+                            <div className="profile-avatar">
+                                <img src={pfp_r} alt="R" className="profile-image" />
+                            </div>
                             <div className="profile-info">
-                                <h4 className="profile-name">Ben Lim</h4>
-                                <div className="profile-role">Backend Engineer</div>
-                                <p className="profile-bio">Builds and maintains the recommendation engine and data pipelines powering suggestions.</p>
+                                <h4 className="profile-name">Rhithikka</h4>
+                                <div className="profile-role">Comms Lead</div>
+                                <div className="profile-subrole">Project Timekeeper</div>
+                                <p className="profile-bio">Drive internal and external communications, ensuring project milestones stay on track.</p>
                             </div>
                         </div>
 
                         <div className="profile-card">
-                            <div className="profile-avatar">CW</div>
+                            <div className="profile-avatar">
+                                 <img src={pfp_l} alt="LJ" className="profile-image" />
+                            </div>
                             <div className="profile-info">
-                                <h4 className="profile-name">Chen Wei</h4>
-                                <div className="profile-role">QA & Data</div>
-                                <p className="profile-bio">Ensures data accuracy and runs quality checks on menu and crowd datasets.</p>
+                                <h4 className="profile-name">Long Jian</h4>
+                                <div className="profile-role">QA Lead</div>
+                                <div className="profile-subrole">Project Member</div>
+                                <p className="profile-bio">Validate system performance and maintains quality standards across the platform.</p>
                             </div>
                         </div>
 
                         <div className="profile-card">
-                            <div className="profile-avatar">DO</div>
+                            <div className="profile-avatar">
+                                 <img src={pfp_h} alt="H" className="profile-image" />
+                            </div>
                             <div className="profile-info">
-                                <h4 className="profile-name">Dina Ong</h4>
-                                <div className="profile-role">Product Manager</div>
-                                <p className="profile-bio">Coordinates roadmap, user research, and campus partnerships to improve Snackii.</p>
+                                <h4 className="profile-name">Hakim</h4>
+                                <div className="profile-role">Media Lead</div>
+                                <div className="profile-subrole">Project Member</div>
+                                <p className="profile-bio">Create compelling visual and multimedia content that enhances user engagement and brand storytelling.</p>     
                             </div>
                         </div>
                     </div>
