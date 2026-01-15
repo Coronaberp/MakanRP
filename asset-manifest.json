@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MakanRP/static/css/main.17960d89.css",
-    "main.js": "/MakanRP/static/js/main.7142aaf5.js",
+    "main.css": "/MakanRP/static/css/main.47bf7e74.css",
+    "main.js": "/MakanRP/static/js/main.add89051.js",
     "static/js/453.9d05b1df.chunk.js": "/MakanRP/static/js/453.9d05b1df.chunk.js",
     "static/media/logo.png": "/MakanRP/static/media/logo.004c1b37dfc81a595549.png",
     "static/media/pfp_r.png": "/MakanRP/static/media/pfp_r.19551126c4e3f1f51adf.png",
@@ -9,12 +9,12 @@
     "static/media/pfp_l.png": "/MakanRP/static/media/pfp_l.d451d8053db28b732f70.png",
     "static/media/pfp_h.png": "/MakanRP/static/media/pfp_h.8a36683fe6abf39e5afc.png",
     "index.html": "/MakanRP/index.html",
-    "main.17960d89.css.map": "/MakanRP/static/css/main.17960d89.css.map",
-    "main.7142aaf5.js.map": "/MakanRP/static/js/main.7142aaf5.js.map",
+    "main.47bf7e74.css.map": "/MakanRP/static/css/main.47bf7e74.css.map",
+    "main.add89051.js.map": "/MakanRP/static/js/main.add89051.js.map",
     "453.9d05b1df.chunk.js.map": "/MakanRP/static/js/453.9d05b1df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.17960d89.css",
-    "static/js/main.7142aaf5.js"
+    "static/css/main.47bf7e74.css",
+    "static/js/main.add89051.js"
   ]
 }
