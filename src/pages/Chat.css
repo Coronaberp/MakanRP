@@ -1,0 +1,93 @@
+/* Chat styles */
+.chat-page{
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px 60px;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.chat-container{
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  background: linear-gradient(180deg,#ffffff 0%, #fbfffc 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  overflow: hidden;
+  border: 1px solid rgba(124,179,66,0.06);
+  flex: 1 0 auto;
+}
+.chat-header{
+  padding: 18px 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.chat-header h2{ margin: 0; color: #23400f; }
+.chat-sub{ margin: 6px 0 0; color: #556b45; font-size: 13px; }
+
+.chat-messages{
+  flex: 1 1 auto;
+  padding: 18px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chat-chips{
+  display: flex;
+  gap: 10px;
+  padding: 0 18px 12px 18px;
+  flex-wrap: wrap;
+}
+
+.chip{
+  background: #f6fff6;
+  border: 1px solid rgba(90,159,95,0.12);
+  color: #2f5e25;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+}
+.chip:hover{ background: #e9f6e7; }
+
+.chat-message{ max-width: 78%; padding: 10px 14px; border-radius: 12px; }
+.from-bot{ background: #f2fff4; align-self: flex-start; border: 1px solid rgba(90,159,95,0.08); }
+.from-user{ background: #e9f9e6; align-self: flex-end; border: 1px solid rgba(90,159,95,0.12); }
+.message-text{ color: #12310a; line-height: 1.4; }
+
+.chat-input-area{
+  display: flex;
+  gap: 10px;
+  padding: 14px 18px;
+  border-top: 1px solid rgba(0,0,0,0.04);
+  align-items: center;
+}
+.chat-input-area input{
+  flex: 1 1 auto;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.08);
+  font-size: 15px;
+}
+.chat-input-area input:focus{ outline: none; box-shadow: 0 0 0 3px rgba(124,179,66,0.12); }
+.send-button{
+  background: #7cb342;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.send-button:hover{ background: #6aa536; }
+
+@media (max-width: 720px){
+  .chat-container{ height: 520px; }
+  .chat-messages{ padding: 12px; }
+  .chat-page{ margin: 20px 12px; }
+}
+
+

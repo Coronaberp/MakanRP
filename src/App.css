@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e8e8e8 0%, #d4d4d4 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  gap: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 3px solid #5a9f5f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.brand-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #5a9f5f;
+  letter-spacing: -0.5px;
+}
+.brand-subtext {
+  font-size: 12px;
+  color: #6b6b6b;
+  font-weight: 500;
+  margin-top: 2px;
+  opacity: 0.9;
+}
+
+.nav-left {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  border-radius: 999px;
+  transition: all 0.18s ease;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  background-color: rgba(90, 159, 95, 0.12);
+  transform: translateY(-1px);
+}
+
+.nav-button.active {
+  background-color: #7cb342;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(124, 179, 66, 0.3);
+}
+
+.login-button {
+  background-color: #fff;
+  border: 2px solid #7cb342;
+  color: #7cb342;
+  font-weight: 600;
+}
+
+.login-button:hover {
+  background-color: #7cb342;
+  color: #fff;
+}
+
+.content {
+  padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 60px;
+  align-items: center;
+}
+
+.hero-content {
+  animation: fadeInLeft 0.8s ease;
+}
+
+.hero-title {
+  font-size: 52px;
+  font-weight: 700;
+  color: #2d5016;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-button.primary {
+  background-color: #7cb342;
+  color: white;
+  box-shadow: 0 4px 15px rgba(124, 179, 66, 0.3);
+}
+
+.cta-button.primary:hover {
+  background-color: #6a9b37;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(124, 179, 66, 0.4);
+}
+
+.cta-button.secondary {
+  background-color: white;
+  color: #7cb342;
+  border: 2px solid #7cb342;
+}
+
+.cta-button.secondary:hover {
+  background-color: #f5f9f2;
+  transform: translateY(-2px);
+}
+
+.hero-image {
+  animation: fadeInRight 0.8s ease;
+}
+
+.image-placeholder {
+  background: linear-gradient(135deg, #7cb342 0%, #5a9f5f 100%);
+  border-radius: 20px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.placeholder-icon {
+  font-size: 120px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+/* Features Section */
+.features-section {
+  background-color: white;
+  padding: 80px 60px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: #2d5016;
+  margin-bottom: 60px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid #e8e8e8;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(124, 179, 66, 0.15);
+  border-color: #7cb342;
+}
+
+.feature-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2d5016;
+  margin-bottom: 12px;
+}
+
+.feature-description {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* About Section */
+.about-section {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 60px;
+  align-items: center;
+}
+
+.about-content {
+  animation: fadeIn 0.8s ease;
+}
+
+.about-text {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.about-image .image-placeholder {
+  background: linear-gradient(135deg, #5a9f5f 0%, #7cb342 100%);
+  height: 350px;
+}
+
+/* Team Section */
+.team-section {
+  background-color: white;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.team-intro {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.team-values {
+  display: flex;
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 8px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-card {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfffc 100%);
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  border: 1px solid rgba(124,179,66,0.08);
+  min-width: 220px;
+  flex: 1 1 220px;
+}
+
+.profile-avatar {
+  min-width: 52px;
+  min-height: 52px;
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  background: linear-gradient(135deg,#7cb342 0%, #5a9f5f 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.profile-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.profile-name {
+  margin: 0;
+  font-size: 16px;
+  color: #23320f;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.profile-role {
+  font-size: 13px;
+  color: #557a3b;
+  opacity: 0.95;
+  white-space: nowrap;
+}
+
+.profile-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.profile-name {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+  color: #23320f;
+}
+.profile-role {
+  font-size: 13px;
+  color: #557a3b;
+  margin-bottom: 8px;
+}
+.profile-bio {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+.value-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  background-color: #2d5016;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .hero-section,
+  .about-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .hero-title {
+    font-size: 40px;
+  }
+  
+  .header {
+    padding: 15px 30px;
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

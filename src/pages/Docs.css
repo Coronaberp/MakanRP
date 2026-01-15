@@ -1,0 +1,36 @@
+/* Minimal styling for Docs page */
+.docs-page{
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px 80px;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.docs-header h1{
+  font-size: 34px;
+  color: #2d5016;
+  margin-bottom: 6px;
+}
+.docs-header .muted{
+  color: #6b6b6b;
+  margin-bottom: 20px;
+}
+.docs-section{
+  background: #fff;
+  padding: 20px 24px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+.docs-section h2{
+  color: #2d5016;
+  margin-bottom: 12px;
+}
+.docs-layered .layer{
+  border-left: 3px solid #7cb342;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  background: linear-gradient(180deg, #fbfffc 0%, #ffffff 100%);
+}
+
